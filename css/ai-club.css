@@ -194,7 +194,7 @@ td, th{
 
 
 /* disbles canvas on smaller screens */
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .name {
     font-size: 3vw;
   }
@@ -204,6 +204,19 @@ td, th{
   canvas {
     height: 0%;
     width: 0%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .name {
+    font-size: 3vw;
+  }
+  .tagline {
+    font-size: 1vw;
+  }
+  canvas {
+    height: 100%;
+    width: 100%;
   }
 }
 

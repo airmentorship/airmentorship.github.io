@@ -18,7 +18,11 @@
     <!-- Custom CSS -->
     <link href="css/ai-club.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
-
+    <script>
+        if (window.width > 600) {
+            $('head').append("<script src='js/background.js'></script>");
+        }
+    </script>
 </head>
 
 <!-- dots canvas-->
@@ -30,19 +34,19 @@
     <header id="head" class="main-header">
         <!-- main menu-->
         <ul class="menuLarge">
-            <li class="menu__item"><a href="index.html#about">About</a></li>
-            <li class="menu__item"><a href="faq.html">FAQ</a></li>
-            <li class="menu__item"><a href="team.html">Team</a></li>
-            <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png" alt="AIR Mentorship Logo" title="Home"></a>
+            <li class="menu__item"><a href="index#about">About</a></li>
+            <li class="menu__item"><a href="faq">FAQ</a></li>
+            <li class="menu__item"><a href="team">Team</a></li>
+            <li class="menu_item" id="menuLogo"><a href="index"><img src="images/logo.png" alt="AIR Mentorship Logo" title="Home"></a>
                 <p style="display:none">Home</p>
             </li>
-            <li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
-            <li class="menu__item"><a href="calendar.html">Calendar</a></li>
+            <li class="menu__item" data-sub="projects"><a href="projects">Projects</a></li>
+            <li class="menu__item"><a href="calendar">Calendar</a></li>
             <li class="menu__item"><a href="https://github.com/airmentorship/air_mentorship_program/">Github</a></li>
         </ul>
         <!-- mobile freindly menu-->
         <ul class="menuSmall">
-            <li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png" alt="AIR Mentorship Logo" alt="Home"></a></li>
+            <li class="menu_item" id="menuLogoMobile"><a href="index"><img src="images/logo.png" alt="AIR Mentorship Logo" alt="Home"></a></li>
             <li class="menu_item" id="openMenu"><span onclick="openNav()">&#9776;</span></li>
         </ul>
         
@@ -51,11 +55,11 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
-                <li class="menu__item"><a href="index.html">Home</a></li>
-                <li class="menu__item"><a href="faq.html">FAQ</a></li>
-                <li class="menu__item"><a href="team.html">Team</a></li>
-                <li class="menu__item"><a href="projects.html">Projects</a></li>
-                <li class="menu__item"><a href="calendar.html">Calendar</a></li>
+                <li class="menu__item"><a href="index">Home</a></li>
+                <li class="menu__item"><a href="faq">FAQ</a></li>
+                <li class="menu__item"><a href="team">Team</a></li>
+                <li class="menu__item"><a href="projects">Projects</a></li>
+                <li class="menu__item"><a href="calendar">Calendar</a></li>
                 <li class="menu__item"><a href="https://github.com/airmentorship/air_mentorship_program/">Github</a></li>
             </ul>
         </div>
@@ -87,7 +91,7 @@
     </div>
     <div class="main" style="text-align: center;">
        <p>The AIR Mentorship Class meets every Saturday from 10am at the AI lab. These classes cover a syllabus designed by the tutors. The content covered in each class is available on <a href="https://github.com/airmentorship/air_mentorship_program" target="_blank"> our github repo</a> and is also listed on this website.</p><br>
-       <a href="calendar.html" class="btn" > View Class Content</a>
+       <a href="calendar" class="btn" > View Class Content</a>
       </div>
 
 
@@ -143,6 +147,8 @@
     <script src="js/background.js"></script>
     <script src="js/sideNav.js"></script>
     <script src="js/menu.js"></script>
+
+    
 
 </body>
 
