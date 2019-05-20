@@ -501,6 +501,9 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.footer >a{
+  color: red;
+}
 
 .icon-twitter:before {
   content: "\f099";
