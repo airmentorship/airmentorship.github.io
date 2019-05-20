@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AIR Mentorship Kampala" />
+    <meta name="keywords" content="ai,, makerere, AIR Mentorship, AIR, artificialintelligence" />
+    <meta name="author" content="Kanyesigye Akbr" />
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta property="og:title" content="AIR Mentorship" />
+    <meta property="og:image" content="images/logo.png" />
+
+    <title>AIR Mentorship- Calendar</title>
+
+    <!-- Custom CSS -->
+    <link href="css/ai-club.css" rel="stylesheet">
+    <link href="css/leaders.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+</head>
+
+<!-- dots canvas-->
+<canvas class='connecting-dots'>
+</canvas>
+
+<body>
+    <!-- menu banner-->
+    <header id="head" class="main-header">
+        <!-- main menu-->
+        <ul class="menuLarge">
+            <li class="menu__item"><a href="index.html#about">About</a></li>
+            <li class="menu__item"><a href="faq.html">FAQ</a></li>
+            <li class="menu__item"><a href="team.html">Team</a></li>
+            <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png" alt="AIR Mentorship Logo" title="Home"></a>
+                <p style="display:none">Home</p>
+            </li>
+            <li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
+            <li class="menu__item"><a href="calendar.html">Calendar</a></li>
+            <li class="menu__item"><a href="https://github.com/airmentorship/air_mentorship_program/">Github</a></li>
+        </ul>
+        <!-- mobile freindly menu-->
+        <ul class="menuSmall">
+            <li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png" alt="AIR Mentorship Logo" alt="Home"></a></li>
+            <li class="menu_item" id="openMenu"><span onclick="openNav()">&#9776;</span></li>
+        </ul>
+        
+        </header>
+        <!-- mobile freindly side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li class="menu__item"><a href="faq.html">FAQ</a></li>
+                <li class="menu__item"><a href="team.html">Team</a></li>
+                <li class="menu__item"><a href="projects.html">Projects</a></li>
+                <li class="menu__item"><a href="calendar.html">Calendar</a></li>
+                <li class="menu__item"><a href="https://github.com/airmentorship/air_mentorship_program/">Github</a></li>
+            </ul>
+        </div>
+
+    <!-- header -->
+    <div class="banner">
+        <h1>Class Schedule</h1>
+        <h2>Stay up to date on all Air Mentorship Classes!</h2>
+    </div>
+
+    <!-- main content -->
+    <section class="main-wide">
+        
+    <table>
+      <thead>
+        <tr>
+            <th >Date</th>
+            <th >Topic</th>
+            <th >Facilitators</th>
+            <th >code</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td data-title="Date" >16th Feb, 2019</td>
+            <td data-title="Topic" >Introduction to Python</td>
+            <td data-title="Facilitator">Benjamin Akera</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/01-Python-Crash-Course">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >23rd Feb, 2019</td>
+            <td data-title="Topic" >Introduction to Numpy</td>
+            <td data-title="Facilitator">Jeremy Tusubira</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/02-Python-for-Data-Analysis-NumPy">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >23rd Feb, 2019</td>
+            <td data-title="Topic" >Intro to Pandas</td>
+            <td data-title="Facilitator">Claire Babirye</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/03-Python-for-Data-Analysis-Pandas">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >2nd March, 2019</td>
+            <td data-title="Topic" >Python for Data Visualization</td>
+            <td data-title="Facilitator">Paul Green</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/04-Data-Visualization">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >16th March, 2019</td>
+            <td data-title="Topic" >Introduction to Machine Learning</td>
+            <td data-title="Facilitator">Benjamin Akera, Claire Babirye</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/05-Machine-Learning">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >23rd March, 2019</td>
+            <td data-title="Topic" >Linear Regression </td>
+            <td data-title="Facilitator">Jeremy Tusubira</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/05-Machine-Learning">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >30th March, 2019</td>
+            <td data-title="Topic" >Logistic Regression</td>
+            <td data-title="Facilitator">Jeremy Tusubira</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/06-Logistic-Regression">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >6th April, 2019</td>
+            <td data-title="Topic" >K-Nearest Neighbors</td>
+            <td data-title="Facilitator">Dina Machuve</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/KNN_lecture_1">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >13th April, 2019</td>
+            <td data-title="Topic" >Decision Trees and Random Forests</td>
+            <td data-title="Facilitator">Claire Babirye, Benjamin Akera</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/07-Decision-Trees-and-Random-Forests">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >13th April,2019</td>
+            <td data-title="Topic" >Support Vector Machines</td>
+            <td data-title="Facilitator">Benjamin Akera</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/08-Support-Vector-Machines">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >20th April, 2019</td>
+            <td data-title="Topic" >Fundamentals of Neural Networks<br>and Deep Learning</td>
+            <td data-title="Facilitator">Ernest Mwebaze</td>
+            <td data-title="Code" ></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >27th April, 2019</td>
+            <td data-title="Topic" >Practical Neural Networks in Numpy</td>
+            <td data-title="Facilitator">Benjamin Akera</td>
+            <td data-title="Code" ><a href="https://github.com/Mujerry/air_mentorship/tree/master/09-Neural-Nets">code</a></td>
+          </tr>
+          <tr>
+            <td data-title="Date" >May the 4th, 2019</td>
+            <td data-title="Topic" >Introduction to Convolutional Neural Networks</td>
+            <td data-title="Facilitator">Dominiquo Santistevan</td>
+            <td data-title="Code" ><a href="https://github.com/airmentorship/air_mentorship_program/blob/master/10-Intro-code</o-ConvNets/Data_science_class_Spring_2019.pdf">code</a></td>
+          </tr>
+      </tbody>
+
+    </table>
+    </section>
+     <section class="footer">
+        <div>
+            <span style="float: left"> ©2019 AIR Mentorship</span>
+            <span style="float: right;">
+                <span class="icon-twitter"></span>
+                <span class="icon-github"></span>
+            </span>
+        </div>
+    </section>
+    <!-- Scripts -->
+    <script src="js/background.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/sideNav.js"></script>
+
+</body>
+
+</html>

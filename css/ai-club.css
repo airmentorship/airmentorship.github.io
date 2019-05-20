@@ -1,0 +1,560 @@
+/* Importing Muli font */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+/* Basic styles */
+html {
+  font-family: 'Muli', sans-serif;
+  zoom: 110%;
+}
+
+body {
+  margin-right: 0px;
+  margin-left: 0px;
+	margin-top: 50px;  
+  margin-bottom: 0px;
+	background-color: #F2F2F2;
+}
+
+
+.full {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box; }
+
+/* Canvas Dot Styling */
+canvas {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity:.5;
+}
+
+#canvasHome {
+  opacity: 1;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+a {
+  color: #9b0000;
+}
+.banner {
+  position: relative;
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* centered image */
+.logo-banner {
+  position: relative;
+  width: 15%;
+  min-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+.logo-banner:hover{
+  transform: scale(1.1);
+}
+.main-wide{
+    z-index: 2;
+    width: 100%;
+    background-color: #fff;
+    margin: 0px;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
+}
+.alt-bg{
+    background-color: #9B0400;
+    color: #CC918F;
+    box-shadow: none;
+    margin-top: 60px;
+}
+.alt-bg a{
+  color: white;
+}
+.footer{  
+  background-color: #9B0400;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  min-height: 80px;
+}
+.footer div{
+  width: 100%;
+  padding: 0px 12%;
+}
+/*section titles*/
+.title{
+  /*min-height: 50px;*/
+  padding: 3%;
+}
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* header ofset for scrolling */ 
+h3 { 
+  position:relative; 
+  z-index: 0;
+}
+h3 span { 
+  position:absolute; 
+  top:-70px;
+}
+.btn{
+
+  text-decoration: none;
+  position: relative;
+  margin: 30px auto;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  border-width: 0;
+  outline: none;
+  border-radius: 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: white;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+
+}
+.btn:hover{
+  /*background-color: #9b0700;*/
+  background-color: #9b0000;
+  color: white;
+
+}
+table{
+  /*font-family:Raleway;*/
+  display: table;
+  /*width: 100%;*/
+}
+th{
+  color: #CC918F;
+  background-color:#9b0000;
+}
+tr:nth-child(even) {background-color: #CC918F;}
+td, th{
+  padding: 1%;
+  padding-left: 1%;
+}
+
+/* about page gallery stlying */
+.item{
+ width: 40%;
+ max-width: 200px; 
+}
+.item img{
+  /*width: 300px;*/
+   width: 100%;
+    margin: 0 auto;
+    transition: -webkit-filter .2s ease-in-out;
+    transition: filter .2s ease-in-out;
+    transition: filter .2s ease-in-out,-webkit-filter .2s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  transition: transform .2s; /* Animation */
+}
+.item img:hover{
+  /*transform: scale(1.1);*/
+  filter: grayscale(0);
+
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+
+/* disbles canvas on smaller screens */
+@media only screen and (min-width: 1000px) {
+  .name {
+    font-size: 3vw;
+  }
+  .tagline {
+    font-size: 1vw;
+  }
+  canvas {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* font styles */
+h1 {
+  font-size: 7vw;
+  text-align: center;
+  color: #fff;
+  line-height:0em;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #CC918F;
+}
+h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #9B0400;
+}
+p {
+  text-align: left;
+}
+#faq p {
+   text-align: center;
+ }
+a {
+  color: #9b0000;
+}
+
+ /* body head and main styles for generic pages */
+@media only screen and (max-width: 700px) {
+  .head {
+    z-index:1;
+    width: 100%;
+    background-color: #9B0400;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 60px;
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}  
+.main{
+    z-index:2;
+    width: 100%;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
+  }
+  .item{
+    width: 80%;
+  }
+  .item img{
+  filter: grayscale(0);
+
+}
+}
+@media only screen and (min-width: 700px) {
+  .head {
+    z-index:1;
+    width: 70%;
+    background-color: #9B0400;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
+  }  
+  .main{
+    z-index:2;
+    width: 70%;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 20px;
+    padding-bottom: 40px;  
+    box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
+  }
+}
+
+
+/* seminars page styling */
+.key {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.key h4 {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+.keyBox {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  margin: 20px;
+  color: white;
+}
+#research {
+  background-color: #C48F65;
+}
+#society {
+  background-color: #005960;
+}
+#applied {
+  background-color:#BE9EC9;
+}
+
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.seminarContainer {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.seminarContainer > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+.seminarContainer h4{
+  color: black;
+}
+
+.seminarDate {
+  min-width: 40px;
+  display: flex;
+  margin-bottom: -20px;
+  margin-top: 40px;
+}
+.seminarDate h2, h4{
+  text-align: left;
+}
+.seminarDate h4{
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .seminarDetails {
+    background-color: #9B0400;
+    min-height: 150px;
+    flex-grow: 4;
+    padding: 10px;
+    height: 100%;
+    z-index: 0;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .seminarDetails {
+    background-color: #9B0400;
+    min-height: 150px;
+    flex-grow: 4;
+    padding: 10px;
+    z-index: 0 ;
+    border-radius: 0px 0px 0px 0px;
+  }
+}
+.seminarDetails h3 {
+  text-align: left;
+  color: white;
+}
+
+@media only screen and (max-width: 1300px) {
+  .seminarCategory {
+    max-width: 50%;
+    height: 30vh;
+    border-radius: 0px 0px 0px 10px;
+    z-index: 0;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .seminarCategory {
+    max-width: 5%;
+    border-radius: 10px 0px 0px 10px; 
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .seminarSpeakerImage {
+    max-width: 50%;
+  }
+  .seminarSpeakerImage img {
+    width: calc(100% + 24px); /* weird 10px padding bug, fix when time */
+    height: 30vh;
+    border-radius: 0px 0px 10px 0px;
+    margin-left: -14px;  /* weird 10px padding bug, fix when time */
+    margin-top: -10px; /* weird 10px padding bug, fix when time */
+    z-index: 10; /* weird 10px padding bug, fix when time */
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .seminarSpeakerImage {
+    max-width: 30%;
+    margin-left: -10px; /* weird 10px padding bug, fix when time */
+    margin-top: -10px; /* weird 10px padding bug, fix when time */
+  }
+  .seminarSpeakerImage img {
+    width: 100%;
+    height: calc(100% + 10px); /* weird 10px padding bug, fix when time */
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+
+@media all and (min-width: 1300px ) {
+  .seminarDetails    { flex: 3 0px; }
+  .seminarCategory { order: 1; } 
+  .seminarDetails    { order: 2; }
+  .seminarSpeakerImage{ order: 3; }
+}
+
+ /* body head and main styles for seminar page */
+ .seminarMain{
+  z-index:2;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0px -10px 155px -16px rgba(0,0,0,0.34);
+}
+ @media only screen and (min-width: 700px) {
+  .seminarMain{
+    width: 70%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .seminarMain{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+/*font icons*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?86ebpq');
+  src:  url('../fonts/icomoon.eot?86ebpq#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?86ebpq') format('truetype'),
+    url('../fonts/icomoon.woff?86ebpq') format('woff'),
+    url('../fonts/icomoon.svg?86ebpq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+
+@media only screen and (max-width: 800px) {
+  
+  /* Force table to not be like tables anymore */
+   table, 
+   thead, 
+   tbody, 
+   th, 
+   td, 
+   tr { 
+    display: block; 
+  }
+ 
+  /* Hide table headers (but not display: none;, for accessibility) */
+   thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+ 
+   tr { border: 1px solid #ccc; }
+ 
+   td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+    white-space: normal;
+    text-align:left;
+  }
+ 
+   td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+    text-align:left;
+    color: #9b0000;
+  }
+ 
+  /*
+  Label the data
+  */
+   td:before { content: attr(data-title); }
+}

@@ -1,0 +1,247 @@
+/* styling for fixed banner */
+#head {
+  position: fixed;
+  padding:  0 0;
+  transform-style: preserve3d;
+  perspective: 3000px;
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0px 4px 60px -5px rgba(0,0,0,0.53);
+}
+
+/* large screen menu styling */
+@media screen and (min-width: 1080px) {
+  .menuLarge {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .menuLarge a {
+    padding: 20px 20px;
+    display: block;
+    text-decoration: none;
+    color: #9B0400;
+  }
+  .menuLarge a:hover {
+    color: #270100;
+  }
+  .menuSmall {
+    display: none;
+  }
+  /*.logo-banner {
+    width: 50%;
+  }*/
+}
+
+/* small screen menu stylinh */
+@media screen and (max-width: 1080px) {
+  .menuSmall {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+  }
+  .menuSmall a {
+    padding: 20px 20px;
+    display: block;
+    text-decoration: none;
+    color: #9B0400;
+  }
+  .menuSmall span {
+    font-size:30px;
+    cursor:pointer
+  }
+
+  .menuSmall a:hover {
+    color: #270100;
+    }
+  #openMenu {
+    position: fixed;
+    right: 10px;
+    top: 6px;
+  }
+  .menuLarge {
+    display: none;
+  }
+  /*.logo-banner {
+    width: 100%;
+  }*/
+}
+
+/* dropdown styling (for large screens */
+.menu__item {
+  position: relative;
+}
+
+.menu__item:hover > .sub-menu-shadow {
+  display: block;
+}
+.menu .sub-menu-shadow {
+  position: absolute;
+  display: none;
+}
+.dropdown-holder {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+}
+.dropdown__bg, .dropdown__arrow {
+  position: absolute;
+}
+.dropdown__arrow {
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white;
+  top: -20px;
+  opacity: 0;
+  transition: 0.2s ease;
+  pointer-events: none;
+}
+.dropdown__bg {
+  width: 450px;
+  height: 400px;
+  background-color: #9B0400;
+  opacity: 0;
+  transition: 0.25s ease;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: -1;
+}
+.dropdown__wrap {
+  overflow: hidden;
+  position: absolute;
+  transition: 0.25s ease;
+  z-index: 1;
+}
+.dropdown__wrap .top-section, .dropdown__wrap .bottom-section {
+  padding: 20px;
+}
+.dropdown-menu__content {
+  position: absolute;
+  opacity: 0;
+  transition: 0.25s ease;
+  min-width: 200px;
+}
+.dropdown-menu__content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.dropdown-menu__content a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+.dropdown-menu.active .dropdown-menu__content {
+  opacity: 1;
+}
+#projects .dropdown-menu__content {
+  width: 640px;
+}
+#developer .dropdown-menu__content {
+  width: 400px;
+}
+.col-2 {
+  display: flex;
+}
+.col-2 > ul, .col-2 > div {
+  flex: 1 0 150px;
+}
+#projects .col-2 li {
+  display: block;
+  padding: 20px 20px 10px;
+}
+#projects .col-2 h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #FA7174;
+  text-align: left;
+}
+#projects .col-2 li {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #fff;
+  text-align: left;
+}
+#projects .col-2 li:hover {
+  color: #270100;
+  text-align: left;
+}
+.info {
+  line-height: 1.7;
+}
+
+/* logo in menu styling */
+#menuLogo img{
+  width: 40px;
+  margin-top: -10px;
+  transition: transform .2s; /* Animation */
+}
+#menuLogo img:hover{
+  transform: scale(1.1);
+}
+
+#menuLogoMobile img {
+  width: 40px;
+  margin-top: -10px;
+}
+
+/* side nav (for small screens)*/ 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #9A0400;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#navSubMenu a {
+  font-size: 20px;
+  padding-left: 50px;
+}

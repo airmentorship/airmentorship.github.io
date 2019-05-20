@@ -1,88 +1,149 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
 
-<table>
-  <tr>
-    <th >Date</th>
-    <th >Topic</th>
-    <th >Facilitators</th>
-    <th >Slides/Code</th>
-  </tr>
-  <tr>
-    <td >16th Feb, 2019</td>
-    <td >Introduction to Python</td>
-    <td >Benjamin Akera</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/01-Python-Crash-Course">code</a></td>
-  </tr>
-  <tr>
-    <td >23rd Feb, 2019</td>
-    <td >Introduction to Numpy</td>
-    <td >Jeremy Tusubira</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/02-Python-for-Data-Analysis-NumPy">code</a></td>
-  </tr>
-  <tr>
-    <td >23rd Feb, 2019</td>
-    <td >Intro to Pandas</td>
-    <td >Claire Babirye</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/03-Python-for-Data-Analysis-Pandas">code</a></td>
-  </tr>
-  <tr>
-    <td >2nd March, 2019</td>
-    <td >Python for Data Visualization</td>
-    <td >Paul Green</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/04-Data-Visualization">code</a></td>
-  </tr>
-  <tr>
-    <td >16th March, 2019</td>
-    <td >Introduction to Machine Learning</td>
-    <td >Benjamin Akera, Claire Babirye</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/05-Machine-Learning">code</a></td>
-  </tr>
-  <tr>
-    <td >23rd March, 2019</td>
-    <td >Linear Regression </td>
-    <td >Jeremy Tusubira</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/05-Machine-Learning">code</a></td>
-  </tr>
-  <tr>
-    <td >30th March, 2019</td>
-    <td >Logistic Regression</td>
-    <td >Jeremy Tusubira</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/06-Logistic-Regression">code</a></td>
-  </tr>
-  <tr>
-    <td >6th April, 2019</td>
-    <td >K-Nearest Neighbors</td>
-    <td >Dina Machuve</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/KNN_lecture_1">code</a></td>
-  </tr>
-  <tr>
-    <td >13th April, 2019</td>
-    <td >Decision Trees and Random Forests</td>
-    <td >Claire Babirye, Benjamin Akera</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/07-Decision-Trees-and-Random-Forests">code</a></td>
-  </tr>
-  <tr>
-    <td >13th April,2019</td>
-    <td >Support Vector Machines</td>
-    <td >Benjamin Akera</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/08-Support-Vector-Machines">code</a></td>
-  </tr>
-  <tr>
-    <td >20th April, 2019</td>
-    <td >Fundamentals of Neural Networks<br>and Deep Learning</td>
-    <td >Ernest Mwebaze</td>
-    <td ></td>
-  </tr>
-  <tr>
-    <td >27th April, 2019</td>
-    <td >Practical Neural Networks in Numpy</td>
-    <td >Benjamin Akera</td>
-    <td ><a href="https://github.com/Mujerry/air_mentorship/tree/master/09-Neural-Nets">code</a></td>
-  </tr>
-  <tr>
-    <td >May the 4th, 2019</td>
-    <td >Introduction to Convolutional Neural Networks</td>
-    <td >Dominiquo Santistevan</td>
-    <td ><a href="https://github.com/airmentorship/air_mentorship_program/blob/master/10-Intro-">code</o-ConvNets/Data_science_class_Spring_2019.pdf)</td>
-  </tr>
+<head>
 
-</table>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AIR Mentorship" />
+    <meta name="keywords" content="ai, Makerere, AIR Mentorship, Akbr, artificialintelligence" />
+    <meta name="author" content="Kanyesigye Akbr" />
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta property="og:title" content="Air Mentorship" />
+    <meta property="og:image" content="images/logo.png" />
+
+    <title>Air Research Lab Makerere</title>
+
+    <!-- Custom CSS -->
+    <link href="css/ai-club.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
+</head>
+
+<!-- dots canvas-->
+<canvas id="canvasHome" class='connecting-dots'>
+</canvas>
+
+<body>
+    <!-- menu banner-->
+    <header id="head" class="main-header">
+        <!-- main menu-->
+        <ul class="menuLarge">
+            <li class="menu__item"><a href="index.html#about">About</a></li>
+            <li class="menu__item"><a href="faq.html">FAQ</a></li>
+            <li class="menu__item"><a href="team.html">Team</a></li>
+            <li class="menu_item" id="menuLogo"><a href="index.html"><img src="images/logo.png" alt="AIR Mentorship Logo" title="Home"></a>
+                <p style="display:none">Home</p>
+            </li>
+            <li class="menu__item" data-sub="projects"><a href="projects.html">Projects</a></li>
+            <li class="menu__item"><a href="calendar.html">Calendar</a></li>
+            <li class="menu__item"><a href="https://github.com/airmentorship/air_mentorship_program/">Github</a></li>
+        </ul>
+        <!-- mobile freindly menu-->
+        <ul class="menuSmall">
+            <li class="menu_item" id="menuLogoMobile"><a href="index.html"><img src="images/logo.png" alt="AIR Mentorship Logo" alt="Home"></a></li>
+            <li class="menu_item" id="openMenu"><span onclick="openNav()">&#9776;</span></li>
+        </ul>
+        
+        </header>
+        <!-- mobile freindly side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li class="menu__item"><a href="faq.html">FAQ</a></li>
+                <li class="menu__item"><a href="team.html">Team</a></li>
+                <li class="menu__item"><a href="projects.html">Projects</a></li>
+                <li class="menu__item"><a href="calendar.html">Calendar</a></li>
+                <li class="menu__item"><a href="https://github.com/airmentorship/air_mentorship_program/">Github</a></li>
+            </ul>
+        </div>
+
+    <!-- Centered image -->
+    <div class='banner'>
+        <h2>AI Research Mentorship</h2>
+            <a href="#start"><img class="img-responsive logo-banner" src="./images/logo.png" alt="Logo"></a>
+        <h2>Seeding great minds</h2>
+    </div>
+
+    <!-- main content -->
+    <div class="main-wide" id="start">
+      <p>
+        AIR Mentorship is an initiative of the AI Research lab at Makerere University, Uganda committed to educating and bringing together people of all backgrounds with an interest in Artificial Intelligence, and aiding them to learn and become resourceful in the field. It is tutuored by members of the AI lab itself.
+        <br><br>
+        Artificial intelligence, far from being science fiction, is a technology with the potential to transform the economy and improve our lives. AIR Mentorship aims to build a community in Kampala around a common interest in Artificial Intelligence. Starting with 15 students in November 2018, we are just starting to build a base on which we shall train many. <br><br>
+        
+      </p>  
+        <p>
+          We are committed to building an excellent community for the members of the AI club and should you join us, you will join a group of driven individuals
+          and form relationships with your fellow AI club members that will last a lifetime. Please contact us if you have any questions.
+        </p>
+    </div>
+
+    <div class="head" style="margin-top: 60px;">
+        <!-- <h1>Classes</h1> -->
+        <h2>Classes</h2>
+    </div>
+    <div class="main" style="text-align: center;">
+       <p>The AIR Mentorship Class meets every Saturday from 10am at the AI lab. These classes cover a syllabus designed by the tutors. The content covered in each class is available on <a href="https://github.com/airmentorship/air_mentorship_program" target="_blank"> our github repo</a> and is also listed on this website.</p><br>
+       <a href="calendar.html" class="btn" > View Class Content</a>
+      </div>
+
+
+    <div class="main-wide alt-bg" id="about">
+        <h2>About</h2>
+      <p >
+        AIR Mentorship is an initiative of the AI Research lab at Makerere University, Uganda committed to educating and bringing together people of all backgrounds with an interest in Artificial Intelligence, and aiding them to learn and become resourceful in the field. It is tutuored by members of the AI lab itself.
+        <br><br>
+        Artificial intelligence, far from being science fiction, is a technology with the potential to transform the economy and improve our lives. AIR Mentorship aims to build a community in Kampala around a common interest in Artificial Intelligence. Starting with 15 students in November 2018, we are just starting to build a base on which we shall train many. <br><br>
+        
+      </p>  
+        
+    </div>
+
+        <!-- Partners section -->
+    <div class="title">
+        <h1>Partners</h1>
+    </div>
+    <section class="main-wide">
+        <div class="container">
+            <!-- <div class="item">
+                <a href="https://mak.ac.ug" target="_blank"><img src="images/logos/makerere.jpg" alt="Makerere Logo"></a>
+            </div> -->
+            <div class="item">
+                <a href="https://microsoft.com" target="_blank"><img src="images/logos/microsoft-logo.jpg" alt="Microsoft Logo"></a>
+            </div>  
+            <div class="item ">
+                <a href="https://google.com" target="_blank"><img src="images/logos/google.png" alt="Google Logo"></a>
+            </div>
+            <div class="item">
+                <a href="https://facebook.com/developers" target="_blank"><img src="images/logos/facebook.png" alt="Facebook Logo"></a>
+            </div>
+            <div class="item">
+                <a href="https://air.ug" target="_blank"><img src="images/logos/air_logo_long.png" alt="AI Research Logo"></a>
+            </div>
+        </div>
+    </section>
+</div>
+    <section class="footer">
+        <div>
+            <span style="float: left"> ©2019 AIR Mentorship</span>
+            <span style="float: right;">
+                <a href="https://twitter.com/air_lab_Muk"><span class="icon-twitter"></span></a>
+                <a href="https://github.com/airmentorship/"><span class="icon-github"></span></a>
+            </span>
+        </div>
+    </section>
+        
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="js/background.js"></script>
+    <script src="js/sideNav.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>
