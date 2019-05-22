@@ -181,7 +181,7 @@ td, th{
 }
 .item img:hover{
   /*transform: scale(1.1);*/
-  filter: grayscale(100);
+  filter: grayscale(0);
 
 }
 .container {
