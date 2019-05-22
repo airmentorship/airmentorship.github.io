@@ -181,7 +181,7 @@ td, th{
 }
 .item img:hover{
   /*transform: scale(1.1);*/
-  filter: grayscale(0);
+  filter: grayscale(100);
 
 }
 .container {
@@ -194,7 +194,7 @@ td, th{
 
 
 /* disbles canvas on smaller screens */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .name {
     font-size: 3vw;
   }
