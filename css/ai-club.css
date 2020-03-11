@@ -56,10 +56,11 @@ a {
   position: relative;
     text-align: center;
     margin-top: 60px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    background-image: url(../images/cocis.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -9;
 }
-
 /* centered image */
 .logo-banner {
   position: relative;
